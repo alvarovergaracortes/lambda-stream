@@ -2,7 +2,7 @@ package cl.alvaro.stream;
 
 import java.util.Date;
 
-public class Persona {
+public class Persona implements Comparable<Persona>{
 	private int rut;
 	private String dv;
 	private String nom;
@@ -38,6 +38,11 @@ public class Persona {
 	}
 	public void setFecha(Date fecha) {
 		this.fecha = fecha;
+	}
+
+	@Override
+	public int compareTo(Persona argPersona) {
+		return this.nom.compareTo(argPersona.nom);
 	}
 
 	

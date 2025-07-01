@@ -15,7 +15,7 @@ public class StreamExample {
 				new Persona(6789056, "4", "Isabella", new Date()),
 				new Persona(3667890, "5", "Alba", new Date())
 				).collect(Collectors.toList());
-
+		
         // filter(): Filtra los elementos que cumplen una condición.
 		listPersonas.stream()
                 .filter(persona -> persona.getNom().length()>4)
